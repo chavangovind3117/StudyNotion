@@ -19,7 +19,7 @@ const Contact = () => {
                     <ContactForm />
                 </div>
             </div>
-            <div>
+            <div className="flex flex-col justify-center items-center">
                 {/* Reviws from Other Learner */}
                 <h1 className="text-center text-4xl font-semibold mt-8 text-white">
                     Reviews from other learners

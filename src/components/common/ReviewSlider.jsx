@@ -19,6 +19,7 @@ import { ratingsEndpoints } from "../../services/apis"
 
 function ReviewSlider() {
   const [reviews, setReviews] = useState([])
+  console.log("reviews", reviews)
   const truncateWords = 15
 
   useEffect(() => {

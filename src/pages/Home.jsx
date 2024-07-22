@@ -200,10 +200,6 @@ const Home = () => {
 
             </div>
 
-
-            {/*Footer */}
-            {/* <Footer /> */}
-
         </div>
     )
 }
