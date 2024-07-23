@@ -15,7 +15,7 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 // database connect 
 database.connect();
@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "*",
         credentials: true,
     })
 )
@@ -51,11 +51,11 @@ app.use("/api/v1/payment", paymentRoutes);
 app.get("/", (req, res) => {
     return res.json({
         success: true,
-        message: "Your Server is running..."
+        message: "Your Server is running...",
     })
 })
 
 app.listen(PORT, () => {
-    console.log(`App is running at ${PORT}`)
-})
+    console.log(`App is running at ${PORT}`);
+});
 
